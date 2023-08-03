@@ -243,6 +243,11 @@
 
                     //$('#exampleModal').modal('show');
 
+                    var formName = document.getElementById("inputName")
+                    var formName2 = document.getElementById("inputComment")
+                    formName.value = ""
+                    formName2.value = ""
+
                 }
 
                 else {
