@@ -7,7 +7,7 @@
 </head>
 <body class="text-bg-dark">
 
-        <div class="container-lg"><div class="container-fluid d-flex justify-content-center"><img src="/assets/perm/banner.png" class="img-fluid"></div>
+        <div class="container-lg"><div class="container-fluid d-flex justify-content-center"><img src="/rachelblueearth/assets/perm/banner.png" class="img-fluid"></div>
 <nav class="navbar navbar-expand-lg px-3 border-bottom border-5 mb-3">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,11 +18,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold fs-5">
 
                     <li class="nav-item pe-5 text-bg-dark text-uppercase">
-                        <a class="nav-link text-bg-dark" href="/">BLUE EARTH</a>
+                        <a class="nav-link text-bg-dark" href="/rachelblueearth/">BLUE EARTH</a>
                     </li><li class="nav-item pe-5 text-bg-dark text-capitalize">
-                            <a class="nav-link text-bg-dark" href="/about/">About</a>
+                            <a class="nav-link text-bg-dark" href="/rachelblueearth/about/">About</a>
                         </li><li class="nav-item pe-5 text-bg-dark text-capitalize">
-                            <a class="nav-link text-bg-dark" href="/posts/">Posts</a>
+                            <a class="nav-link text-bg-dark" href="/rachelblueearth/posts/">Posts</a>
                         </li></ul>
 
                 <span class="navbar-text fw-bold text-bg-dark">
@@ -37,7 +37,7 @@
                     <h1 class="text-uppercase fw-bolder">The Myth of the Moon Rabbit</h1><h4>By <a href="" class="link-warning">Top10 Facts</a> | May 21, 2023</h4>
               </div>
 
-            <div class="container-fluid mb-3" style="min-height:300px; background-image:url(/assets/images/Sun_Wukong_and_Jade_Rabbit.jpg);background-size:cover;background-position: center;"></div>
+            <div class="container-fluid mb-3" style="min-height:300px; background-image:url(/rachelblueearth/assets/images/Sun_Wukong_and_Jade_Rabbit.jpg);background-size:cover;background-position: center;"></div>
               
             <p>The Moon rabbit or Moon hare is a mythical figure in East Asian and indigenous American folklore, based on pareidolic interpretations that identify the dark markings on the near side of the Moon as a rabbit or hare. In East Asia, the rabbit is seen as pounding with a mortar and pestle, but the contents of the mortar differ among Chinese, Japanese, Korean and Vietnamese folklore. In Chinese folklore, the rabbit is often portrayed as a companion of the Moon goddess Chang’e, constantly pounding the elixir of life for her and some show the making of cakes or rice cakes; but in Japanese and Korean versions, the rabbit is pounding the ingredients for mochi or some other type of rice cakes; in the Vietnamese version, the Moon rabbit often appears with Hằng Nga and Chú Cuội, and like the Chinese version, the Vietnamese Moon rabbit also pounding the elixir of immortality in the mortar. In some Chinese versions, the rabbit pounds medicine for the mortals and some include making of mooncakes. Moon folklore from certain Amerindian cultures of North America also has rabbit themes and characters.</p>
 
@@ -70,8 +70,7 @@
           
           <div class="form-group">
 
-          <div><textarea type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputComment" placeholder="Enter your comment here..." name="name">
-          </textarea></div>
+          <div><textarea type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputComment" placeholder="Enter your comment here..." name="name"></textarea></div>
 
           <!-- Submit button -->
 
@@ -122,7 +121,7 @@
         <div class="row justify-content-center">
             <div class="col-4">
 
-                <img src="/assets/perm/bird-pixel.gif">
+                <img src="/rachelblueearth/assets/perm/bird-pixel.gif">
 
             </div>
             <div class="col-4 d-flex flex-column justify-content-center">
@@ -387,6 +386,11 @@
                     
 
                     //$('#exampleModal').modal('show');
+
+                    var formName = document.getElementById("inputName")
+                    var formName2 = document.getElementById("inputComment")
+                    formName.value = ""
+                    formName2.value = ""
 
                 }
 
