@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body class="text-bg-dark">
+
+        <div class="container-lg"><div class="container-fluid d-flex justify-content-center"><img src="/assets/perm/banner.png" class="img-fluid"></div>
+<nav class="navbar navbar-expand-lg px-3 border-bottom border-5 mb-3">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold fs-5">
+
+                    <li class="nav-item pe-5 text-bg-dark text-uppercase">
+                        <a class="nav-link text-bg-dark" href="/">BLUE EARTH</a>
+                    </li><li class="nav-item pe-5 text-bg-dark text-capitalize">
+                            <a class="nav-link text-bg-dark" href="/about/">About</a>
+                        </li><li class="nav-item pe-5 text-bg-dark text-capitalize">
+                            <a class="nav-link text-bg-dark" href="/posts/">Posts</a>
+                        </li></ul>
+
+                <span class="navbar-text fw-bold text-bg-dark">
+                    August 03, 2023
+                </span>
+
+            </div>
+
+    </nav><div class="p-3">
+
+                <div id="title-section" class="pb-3">
+                    <h1 class="text-uppercase fw-bolder">The First Bees Evolved on an Ancient Supercontinent More Than 120 Million Years Ago</h1><h4>By <a href="" class="link-warning">Michael Jenkins</a> | Jul 25, 2023</h4>
+              </div>
+
+            <div class="container-fluid mb-3" style="min-height:300px; background-image:url(/assets/images/bee.webp);background-size:cover;background-position: center;"></div>
+              
+            <p>Working with a global team, Bossert and Almeida’s team sequenced and compared genes from more than 200 bee species. They compared them with traits from 185 different bee fossils, as well as extinct species, developing an evolutionary history and genealogical models for historical bee distribution. In what may be the broadest genomic study of bees to date, they analyzed hundreds to thousands of genes at a time to make sure that the relationships they inferred were correct.</p>
+
+<p>“This is the first time we have broad genome-scale data for all seven bee families,” said co-author Elizabeth Murray, a WSU assistant professor of entomology.
+Bees’ Evolution From Wasps</p>
+
+<p>Previous research established that the first bees likely evolved from wasps, transitioning from predators to collectors of nectar and pollen. This study shows they arose in arid regions of western Gondwana during the early Cretaceous period.</p>
+
+<p>“For the first time, we have statistical evidence that bees originated on Gondwana,” Bossert said. “We now know that bees are originally southern hemisphere insects.”</p>
+
+<h2 id="ancient-amber-bee">Ancient Amber Bee</h2>
+
+<p>A piece of ancient amber containing a tiny, fossilized bee. Bossert and colleagues from around the globe compared features of bees from fossils, including extinct species, in one of the broadest genomic studies of bees to date. Credit: Bossert lab
+Geographic Expansion and Diversification of Bees</p>
+
+<p>The researchers found evidence that as the new continents formed, bees moved north, diversifying and spreading in a parallel partnership with angiosperms, the flowering plants. Later, they colonized India and Australia. All major families of bees appeared to split off prior to the dawn of the Tertiary period, 65 million years ago—the era when dinosaurs became extinct.
+Bees and Plant Biodiversity</p>
+
+<p>The tropical regions of the western hemisphere have an exceptionally rich flora, and that diversity may be due to their longtime association with bees, authors noted. One-quarter of all flowering plants belong to the large and diverse rose family, which make up a significant share of the tropical and temperate host plants for bees.</p>
+<div class="text-light pt-3">
+
+    <h1 class="text-uppercase fw-bold pb-3">Comments</h1>
+
+    <div id="comments">
+    </div>
+
+    
+      <div id="newlySubmitted">
+      </div>
+    
+
+      <!--- We wrap our contents with an id so the script tag knows what to look out for -->
+
+      <form class="mb-3" id="commentForm">
+          <h2 class="fw-bold">Leave a Reply</h2>
+          <div class="form-group">
+            
+          <input type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputName" aria-describedby="emailHelp" placeholder="Enter name" name="email">
+          </div>
+
+          
+          <div class="form-group">
+
+          <div><textarea type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputComment" placeholder="Enter your comment here..." name="name">
+          </textarea></div>
+
+          <!-- Submit button -->
+
+          <div class="d-flex align-items-center flex-row-reverse">
+              <button id="btn" type="submit" class="btn btn-light rounded-pill">Post a Comment</button>
+              <div class="px-3"><div id="alert" class="spinner-border spinner-border-sm d-none" role="status"></div></div>
+          </div>
+    </div>
+  </div>
+
+  
+        
+
+        <!-- This is a modal - this will only show up when we hear back from Apps Script -->
+
+
+        <div class="modal fade" id="notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Your comment has been posted!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Please keep the community guidelines in mind when posting comments.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+    </form>
+
+    <div class="alert alert-warning d-none" id="submissionSuccess" role="alert">
+      <strong>Comment submitted!</strong>
+    </div>
+
+    <!-- Alert -->
+
+    
+</div></div><div class="container-fluid text-light py-3" style="background-color: black">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-4">
+
+                <img src="/assets/perm/bird-pixel.gif">
+
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center">
+
+                <p class="align-self-center text-center">Content brought to you by BLUE EARTH (c) 2023</p><br>
+                <p class="align-self-center text-center"><small>For inquiries, contact admin@blue-earth.com</small></p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>        
+
+    </body>
+
+    <script>
+
+        const page = "/environment/2023/07/25/ancient-bees"
+
+        // Reading comments script
+
+        // let can declare a variable limited to the scope of a block statement or an expression where it is used, unlike var where it can declare globally
+    
+        let comments;
+
+        // The contents of the container with id "comments" in the HTML body is placed inside placeholder
+
+        var placeholder = document.getElementById("comments");
+
+        var i = 0;
+
+        // The async function is used to wait for some sort of return -- essentially it has an await inside the function
+
+        async function fet() {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbwm7f9RBUxWlG7OgtHpoJqxXHtY6G7a6HplmMLr6iyF6V6JD89OhlPnzbLSabk5ITk9/exec?postId=" + page);
+
+            // Notice here that postId=page (with "page" here being page-1) is the "query" (think of inquiry, i.e. a request)
+            // The way the Firebase access has been formulated is that it will specify a path to get our desired data. We already have "/blog_contact/", but because we want to display comments from a specific page ID, we must be precise
+
+            // One way to do things is to fetch *all* the data we have and filter it on the browser side (likely using comments.[page]), but this is not what we want for this task
+
+            // Hence we can pass this variable (we can also write the value as a string, I simply use "page" for easier referall) off to Apps Script, but since we can't just send off a value on its own, we need a key for it.
+
+            // Therefore "postId" is information not important on the browser side, but it is a keyword that Apps Script will look for. If we use the "packaging" analogy, Apps Script will look for the package called "postId". 
+
+
+
+
+
+            // await is usually used to unwrap promises by passing a Promise as the expression. Using await pauses the execution of its surrounding async function until the promise is settled (that is, fulfilled or rejected). When execution resumes, the value of the await expression becomes that of the fulfilled promise.
+
+            // Here, the return is returned as JSON and passed into the comments
+
+            comments = await res.json();
+
+            // We make a variable called content, which is currently empty
+
+            var content = ""
+
+            /*function timeFormatter (epochDate) {
+                const time = new Intl.DateTimeFormat('en-US', {
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true
+                });
+
+                const formatter2 = new Intl.DateTimeFormat('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+                });
+
+                const timeHourMinuteAmPm = time.format(new Date());
+                const formatterMonthDayYear = formatter2.format(new Date());
+                const date = formatterMonthDayYear + ' at ' + timeHourMinuteAmPm
+
+                return date
+
+            };*/
+
+            // Now, we take each entry in the list, put them in a card, append them, and put them in the content variable we just made
+
+            for (key in comments) {
+                i += 1;
+
+                console.log(key);
+
+                var name = comments[key].name; // These are just alternative forms of how you can access the path
+                var comment = comments[key]["comment"];
+
+                var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+                // var optionsTime = { hour: 'numeric', minute: 'numeric', hour12: true };
+                var date = new Date(comments[key]["date"]);
+                var dateDisplayed = date.toLocaleDateString("en-US", options);
+                // var timeDisplayed = date.toLocaleDateString("en-US", options);
+
+
+                // date = timeFormatter(epochDate)
+
+                console.log(name); 
+                console.log(comment);
+                console.log(dateDisplayed);
+
+                // Creates a variable called card that contains the Bootstrap formatting, and the ${} notation is a string literal that can access a variable inside a string 
+
+                var card = `<div class="card mb-4 border-secondary rounded-0 text-bg-dark">
+                    <div class="card-body">
+                        <p>
+                            <b>${name}</b> says:
+                            <br>
+                            <small class="text-warning">${dateDisplayed}</small>
+                        </p>
+                        
+                        <p class="mb-2 text-body-secondary">${comment}</p>
+                    </div>
+                </div>`
+
+                content += card;
+                //var newDiv = document.createElement('div');
+                //newDiv.innerHTML += `comments (${i}): ${key}`;)
+                //placeholder.appendChild(newDiv);
+
+            }
+
+            // Now we put everything we've put inside the content inside the html
+            placeholder.innerHTML = content;
+            
+
+        }
+
+        fet();
+
+
+
+
+        // Submit comments script
+
+        // We get information on the submit button as well as the alert element
+
+        const btn = document.getElementById('btn'),
+        alert = document.getElementById('alert'),
+        submissionSuccess = document.getElementById('submissionSuccess')
+
+        // We add an event listener to when the button is clicked...
+      
+        btn.addEventListener('click', () => {
+
+        // The alert's default state of appearance is "d-none", which hides the element. We remove the d-none so we can show it...
+        
+        alert.classList.remove('d-none');
+
+        // We wait, then add the d-none property back to the element
+        
+        setTimeout(() => {
+            alert.classList.add('d-none');
+        }, 2000)
+        
+        })
+
+
+        // We get the element with the id commentForm, and look out for a submit event, which we will execute the postComment function
+
+        document.getElementById('commentForm').addEventListener('submit', postComment);
+
+        //const myModal = document.getElementById('exampleModal')
+        //const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+
+        // After we execute postComment, we show the Bootstrap Modal
+
+        const myModal = new bootstrap.Modal('#notification');
+        
+        var placeholderNewlySubmitted = document.getElementById("newlySubmitted")
+      
+
+        function postComment (event) {
+
+            // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur
+
+            event.preventDefault();
+
+            // We store the contents that we've put inside the form in the consts 
+
+            const name = document.getElementById('inputName').value;
+            const comment = document.getElementById('inputComment').value;
+            const tempDate = "Moments ago"
+
+            /* const time = new Intl.DateTimeFormat('en-US', {
+              hour: 'numeric',
+              minute: 'numeric',
+              hour12: true
+            });
+
+            const formatter2 = new Intl.DateTimeFormat('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric'
+            });
+
+            const timeHourMinuteAmPm = time.format(new Date());
+            const formatterMonthDayYear = formatter2.format(new Date());
+            const date = formatterMonthDayYear + ' at ' + timeHourMinuteAmPm*/
+
+            // XMLHttpRequest is a built-in browser object that allows to make HTTP requests in JavaScript
+
+            const XHR = new XMLHttpRequest();
+
+            // We store the commentForm inside the form
+
+            form = document.getElementById('commentForm');
+
+            // Since we have the XMLHttpRequest() inside the XHR const, it looks out for a "load" event, where it would pass the paramater into a function created immediately... 
+
+            var newlySubmittedContent = "";
+
+            function addNewComment(name, comment, tempDate) {
+              var newComment = `<div class="card mb-4 border-secondary rounded-0 text-bg-dark">
+                    <div class="card-body">
+                        <p>
+                            <b>${name}</b> says:
+                            <br>
+                            <small class="text-warning">${tempDate}</small>
+                        </p>
+                        
+                        <p class="mb-2 text-body-secondary">${comment}</p>
+                    </div>
+                </div>`
+
+                newlySubmittedContent += newComment;
+            };
+
+            XHR.addEventListener("load", (event) => {
+
+                // We're expecting a response from Google Apps Script. If we hear OK, then the modal we made should show.
+
+                if (event.target.responseText == "OK") {
+                    console.log("modal should show");
+                    
+                    // myModal.show();
+
+                    newlySubmitted.classList.remove('d-none');
+
+                    addNewComment(name, comment, tempDate);
+                    placeholderNewlySubmitted.innerHTML = newlySubmittedContent;
+                    form.classList.add('d-none')
+
+                    submissionSuccess.classList.remove('d-none')
+
+                    setTimeout(() => {
+                        submissionSuccess.classList.add('d-none');
+                        form.classList.remove('d-none');
+                    }, 2000)
+
+                    
+                    
+                    
+                    
+                    
+
+                    //$('#exampleModal').modal('show');
+
+                }
+
+                else {
+                    console.log("Failed to submit comment...");
+                }
+            });
+            
+
+            // We're also looking out for an error
+
+            XHR.addEventListener("error", (event) => {
+                alert("Error: " + event.target.responseText);
+            });
+            
+            // FD.append("thisVariableIsForAppsScriptEmail", thisIsMyVariableCalledEmail);
+            // FD.append("thisVariableIsForAppsScriptName", thisIsMyVariableCalledName);
+
+            // Here we post whatever we've just sent via POST method...
+
+            XHR.open("POST", "https://script.google.com/macros/s/AKfycbzeTZMlV9a-Tb3VvTJLYoKdK1IBDLhFLsD3Pgv6rrNpo60IpgdWfJmYN03R7RDEiKdfpA/exec");
+            
+            jsondata = JSON.stringify({
+                    "nameAppsScript": name,
+                    "commentAppsScript": comment,
+                    "pageAppsScript": page
+                });
+                
+            XHR.send(jsondata);
+
+        }</script>
+    
+</html>
+

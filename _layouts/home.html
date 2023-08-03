@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="text-bg-dark">
+
+    <div class="container-lg">
+      {%- include banner.html -%}
+      {%- include navbar.html -%}
+
+      
+
+        <div class="row">
+          <div class="col-8"> 
+            {%- include carousel.html -%}
+
+            <div class="p-3">
+
+            <div class="d-flex justify-content-between border-bottom border-5 mb-3">
+              <h1 class="align-self-start text-uppercase fw-bolder">Latest posts</h1>
+              <p class="align-self-end"><a href="/posts/" class="link-light">See all news</a></p>
+            </div>
+
+            
+            {%- include latest.html limit=3 -%}
+          </div>
+
+          </div>
+
+          <div class="col-4">
+            {%- include aboutsidebar.html -%}
+          </div>
+
+        </div>
+
+      
+
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

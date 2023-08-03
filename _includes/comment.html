@@ -1,0 +1,70 @@
+<div class="text-light pt-3">
+
+    <h1 class="text-uppercase fw-bold pb-3">Comments</h1>
+
+    <div id="comments">
+    </div>
+
+    
+      <div id="newlySubmitted">
+      </div>
+    
+
+      <!--- We wrap our contents with an id so the script tag knows what to look out for -->
+
+      <form class="mb-3" id="commentForm">
+          <h2 class="fw-bold">Leave a Reply</h2>
+          <div class="form-group">
+            
+          <input type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputName" aria-describedby="emailHelp" placeholder="Enter name" name="email">
+          </div>
+
+          
+          <div class="form-group">
+
+          <div><textarea type="text" class="form-control mb-3 border-secondary rounded-0 text-bg-dark" id="inputComment" placeholder="Enter your comment here..." name="name">
+          </textarea></div>
+
+          <!-- Submit button -->
+
+          <div class="d-flex align-items-center flex-row-reverse">
+              <button id="btn" type="submit" class="btn btn-light rounded-pill">Post a Comment</button>
+              <div class="px-3"><div id="alert" class="spinner-border spinner-border-sm d-none" role="status"></div></div>
+          </div>
+    </div>
+  </div>
+
+  
+        
+
+        <!-- This is a modal - this will only show up when we hear back from Apps Script -->
+
+
+        <div class="modal fade" id="notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Your comment has been posted!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Please keep the community guidelines in mind when posting comments.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+    </form>
+
+    <div class="alert alert-warning d-none" id="submissionSuccess" role="alert">
+      <strong>Comment submitted!</strong>
+    </div>
+
+    <!-- Alert -->
+
+    
+</div>

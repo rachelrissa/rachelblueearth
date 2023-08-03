@@ -1,0 +1,67 @@
+{%- if site.posts.size > 0 -%}
+
+<div id="carouselExampleControls" class="carousel slide border-0" data-bs-ride="carousel">
+    <div class="carousel-inner border-0">
+
+        {%- for post in site.tags.featured limit:1 -%}
+
+            <div class="carousel-item active">
+
+                <div class="card border-0 rounded-0 text-bg-dark" style="height: 300px">
+                    <div class="row g-0">
+
+                    <div class="col-md-8">
+
+                        <div class="card-body">
+                            <h1 class="card-title text-uppercase fw-bolder"><a href="{{ post.url | relative_url }}" class="link-light text-decoration-none">{{ post.title | truncate: 60 | escape }}</a></h5>
+                            <p class="card-text">{{ post.excerpt | strip_html | truncate: 400 | escape }} <a href="{{ post.url | relative_url }}" class="link-warning">Read more.</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 h-100" style="min-height:300px; background-image:url({{ post.image | relative_url }}); background-size:cover;background-position:center;">
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        {%- endfor -%}
+
+        {%- for post in site.tags.featured limit:2 offset:1 -%}
+
+        <div class="carousel-item">
+            
+            <div class="card border-0 rounded-0 text-bg-dark" style="height: 300px">
+                <div class="row g-0">
+
+                <div class="col-md-8">
+
+                    <div class="card-body">
+                        <h1 class="card-title text-uppercase fw-bolder"><a href="{{ post.url | relative_url }}" class="link-light text-decoration-none">{{ post.title | truncate: 60 | escape }}</a></h5>
+                        <p class="card-text">{{ post.excerpt | strip_html | truncate: 400 | escape }} <a href="{{ post.url | relative_url }}" class="link-warning">Read more.</a></p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 h-100" style="min-height:300px; background-image:url({{ post.image | relative_url }}); background-size:cover;background-position:center;">
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        {%- endfor -%}
+
+        {%- endif -%}
+
+
+
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
+</div>
+</div>
